@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="google-site-verification" content="Pd9banJDO3RuxZ1W-yyE23s4-dO3dDqS8mobezMCH94" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UAE Work Hub</title>
@@ -45,6 +46,7 @@ button{
 background:#0b6623;
 color:white;
 border:none;
+cursor:pointer;
 }
 
 .result{
@@ -67,10 +69,13 @@ font-size:12px;
 <script>
 function risk(){
 let a=document.getElementById("activity").value;
-if(!a){alert("Enter activity");return;}
+if(!a){
+alert("Enter activity");
+return;
+}
 
 document.getElementById("out").innerText =
-"RISK ASSESSMENT\n\nActivity: "+a+
+"RISK ASSESSMENT\n\nActivity: " + a +
 "\n\nHazards:\n- Slips\n- Trips\n- Falling objects\n\nControls:\n- PPE\n- Safety supervision\n- Work permit\n\nRisk Level: Medium";
 }
 </script>
